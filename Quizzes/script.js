@@ -23,14 +23,72 @@ const quizDB = [{
         c: "Hey Transfer Protocol",
         d: "Hypertext Transfer Protocol",
         ans: "ans4"
-    }, {
+    },
+    {
         question: "Q4: What is the full form of JS?",
         a: "JavaScript",
         b: "JavaSuper",
         c: "JustScript",
         d: "JordenShoes",
         ans: "ans1"
+    },
+    {
+        question: " Q5: Choose the correct HTML element for the largest heading:",
+        a: "<h1>",
+        b: "<h6>",
+        c: "<head>",
+        d: "<heading>",
+        ans: "ans1"
+    },
+    {
+        question: " Q6: There are ___ levels of heading in HTML",
+        a: "Three",
+        b: "Four",
+        c: "Five",
+        d: "Six",
+        ans: "ans4"
+    },
+    {
+        question: " Q7: Which of the following tags do not require a terminator?",
+        a: "<u>",
+        b: "<br>",
+        c: "<b>",
+        d: "none of the above",
+        ans: "ans2"
+    },
+    {
+        question: " Q8: To get the ordered list we use",
+        a: "<h1>",
+        b: "<ul>",
+        c: "<ol>",
+        d: "<ml>",
+        ans: "ans3"
+    },
+    {
+        question: " Q9:In HTML ______ tag contains the information about the current document such as title etc.",
+        a: "Body",
+        b: "TD",
+        c: "HEAD",
+        d: "None of the above",
+        ans: "ans3"
+    },
+    {
+        question: " Q10: Which one of the following tags is used to insert graphics on the web page?",
+        a: "<IMAGE>",
+        b: "<IMAGES>",
+        c: "<IMG>",
+        d: "<GRAPHICS>",
+        ans: "ans3"
+    },
+    {
+        question: " Q11: The tag to give visual division between sections of the page and which causes the browser to draw an embossed line is",
+        a: "<HL>",
+        b: "<HR>",
+        c: "<UR>",
+        d: "None of the above",
+        ans: "ans2"
     }
+
 ];
 
 // Load Questions
