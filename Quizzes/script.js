@@ -81,3 +81,31 @@ const getCheckAnswer = () => {
     return answer;
 
 }
+
+submit.addEventListener('click', () => {
+    const checkedAnswer = getCheckAnswer();
+    console.log(checkedAnswer);
+
+    if (checkedAnswer === quizDB[questionCount].ans) {
+        score++;
+    }
+    // else{
+    //     console.log("no");
+    // }
+
+    questionCount++;
+    deselectAll();
+
+    if (questionCount < quizDB.length) {
+        loadQuestion();
+
+    } else {
+        showScore.innerHTML = `
+            <h3> You scored ${score}/${quizDB.length} ✌</h3>
+
+            <button class="btn" onclick="location.reload()">Play Again</button>
+        `;
+
+        showScore.classList.remove('scoreArea');
+    }
+});
