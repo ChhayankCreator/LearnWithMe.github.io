@@ -23,133 +23,133 @@ let questions = [{
     },
     {
         numb: 3,
-        question: "",
-        answer: "",
+        question: "Parity bits are used for which of the following purposes?",
+        answer: "To detect errors",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "Encryption of data",
+            "To transmit faster",
+            "To detect errors",
+            "To identify the user"
         ]
     }, {
         numb: 4,
-        question: "",
-        answer: "",
+        question: "What kind of transmission medium is most appropriate to carry data in a computer network that is exposed to electrical interferences?",
+        answer: "Optical fiber",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "Unshielded twisted pair",
+            "Optical fiber",
+            "Coaxial cable",
+            "Microwave"
         ]
     }, {
         numb: 5,
-        question: "",
-        answer: "",
+        question: "A collection of hyperlinked documents on the internet forms the ?",
+        answer: "World Wide Web (WWW)",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "World Wide Web (WWW)",
+            "E-mail system",
+            "Mailing list",
+            "Hypertext markup language"
         ]
     }, {
         numb: 6,
-        question: "",
-        answer: "",
+        question: " The IP network 192.168.50.0 is to be divided into 10 equal sized subnets. Which of the following subnet masks can be used for the above requirement?",
+        answer: "255.255.0",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "255.243.240",
+            "255.255.0.0",
+            "255.255.0",
+            "255.255.255"
         ]
     }, {
         numb: 7,
-        question: "",
-        answer: "",
+        question: "When the mail server sends mail to other mail servers it becomes ___ ?",
+        answer: "SMTP client",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "SMTP client",
+            "SMTP server",
+            "Peer",
+            "Master"
         ]
     }, {
         numb: 8,
-        question: "",
-        answer: "",
+        question: "TCP/IP model does not have ______ layer but OSI model have this layer.",
+        answer: "session layer",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "session layer",
+            "transport layer",
+            "application layer",
+            "network layer"
         ]
     }, {
         numb: 9,
-        question: "",
-        answer: "",
+        question: "Which layer is used to link the network support layers and user support layers?",
+        answer: "transport layer",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "session layer",
+            "data link layer",
+            "transport layer",
+            "network layer"
         ]
     }, {
         numb: 10,
-        question: "",
-        answer: "",
+        question: "Which of the following protocol is used for remote terminal connection service?",
+        answer: "TELNET",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "RARP",
+            "UDP",
+            "FTP",
+            "TELNET"
         ]
     }, {
         numb: 11,
-        question: "",
-        answer: "",
+        question: "Which of the following terms is just the collection of networks that can be joined together?",
+        answer: " Intranet",
         options: [
-            "",
-            "",
-            "",
-            ""
+            " Intranet",
+            "Extranet",
+            "Internet",
+            "LAN"
         ]
     }, {
         numb: 12,
-        question: "",
-        answer: "",
+        question: "The application layer of the OSI model is",
+        answer: "Seven layer",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "Four layer",
+            "Five layer",
+            "Six layer",
+            "Seven layer"
         ]
     }, {
         numb: 13,
-        question: "",
-        answer: "",
+        question: "The cheapest modems can transmit",
+        answer: "300 bits per second",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "300 bits per second",
+            "1,200 bits per second",
+            "2,400 bits per second",
+            "None of these"
         ]
     }, {
         numb: 14,
-        question: "",
-        answer: "",
+        question: "The data rate of the ISDN basic access B channel is",
+        answer: "64 Kbps",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "32 Kbps",
+            "64 Kbps",
+            "144 Kbps",
+            "192 Kbps"
         ]
     }, {
         numb: 15,
-        question: "",
-        answer: "",
+        question: "Null modems are type of",
+        answer: "Modem eliminator",
         options: [
-            "",
-            "",
-            "",
-            ""
+            " Modem",
+            "Modem eliminator",
+            "Protocol converter",
+            "Multiplexer"
         ]
     },
 
