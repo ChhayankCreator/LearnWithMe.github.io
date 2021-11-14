@@ -1,24 +1,24 @@
 // creating an array and passing the number, questions, options, and answers
 let questions = [{
         numb: 1,
-        question: "",
-        answer: "",
+        question: "Which type of topology is best suited for large businesses which must carefully control and coordinate the operation of distributed branch outlets?",
+        answer: "Star",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "Ring",
+            "Local area",
+            "Hierarchical",
+            "Star"
         ]
     },
     {
         numb: 2,
-        question: "",
-        answer: "",
+        question: "Which of the following transmission directions listed is not a legitimate channel?",
+        answer: "Double Duplex",
         options: [
-            "",
-            "",
-            "",
-            ""
+            "Simplex",
+            "Half Duplex",
+            "Full Duplex",
+            "Double Duplex"
         ]
     },
     {
