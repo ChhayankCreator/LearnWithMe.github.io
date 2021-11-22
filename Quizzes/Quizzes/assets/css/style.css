@@ -948,6 +948,7 @@ section {
 }
 .events .card-img img {
   max-width: 100%;
+  border-radius: 20px;
   transition: all 0.3s ease-in-out;
 }
 .events .card-body {
