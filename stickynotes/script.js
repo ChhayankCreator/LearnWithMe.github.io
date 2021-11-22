@@ -1,3 +1,15 @@
+document.querySelector("#hide").addEventListener("click", () => {
+    document.querySelector("#modal").style.display = "none";
+});
+
+document.querySelector("#user_input").addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        const text = document.querySelector("#user_input");
+        localStorage.setItem("notes", text.value);
+        createStickyNote(text.value);
+        document.querySelector("#user_input").value = "";
+    }
+});
 createStickyNote = (text) => {
     let note = document.createElement("div");
     let details = document.createElement("div");
