@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    background-color: #c68c53a8;
+    font-family: 'Architects Daughter', cursive;
+}
