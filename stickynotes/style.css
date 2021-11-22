@@ -68,3 +68,50 @@ button:hover {
     width: 1280px;
     margin: auto;
 }
+
+#header {
+    color: white;
+    padding: 0 20px;
+    min-height: 70px;
+    text-shadow: 1px 1px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fas {
+    color: #c2ff3d;
+}
+
+#all_notes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.note {
+    width: 300px;
+    height: 300px;
+    transition: 2s;
+    cursor: pointer;
+    overflow-wrap: break-word;
+    box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.75);
+}
+
+.note h1 {
+    font-size: 1.5rem;
+}
+
+.details {
+    margin-top: 25px;
+    padding: 0 15px;
+    font-size: 1.5rem;
+}
+
+.details i {
+    color: whitesmoke;
+    cursor: pointer;
+    text-shadow: 1px 1px #BBB;
+}
