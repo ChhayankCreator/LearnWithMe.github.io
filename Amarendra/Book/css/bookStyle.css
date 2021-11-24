@@ -28,12 +28,16 @@
     border-radius: 10px;
 }
 .download {
-    border-radius: 50%;
-    width: 35px;
+    border-radius: 10px;
+    width: 138px;
     height: 35px;
     left: 801px;
     top: 412px;
     background: #5fcf80;
+}
+
+.download h3 {
+    color: white;
 }
 
 .star-rating{
