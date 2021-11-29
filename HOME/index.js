@@ -4,7 +4,7 @@ document.getElementById("loginForm").addEventListener("submit", (event) => {
 
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-        location.replace("HOME/index.html")
+        location.replace("HOME/home.html")
     }
 })
 
@@ -19,7 +19,7 @@ function login() {
 
             firebase.auth().onAuthStateChanged((user) => {
                 if (user) {
-                    location.replace("HOME/index.html")
+                    location.replace("HOME/home.html")
                 }
             })
 
