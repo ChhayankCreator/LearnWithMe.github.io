@@ -1,4 +1,4 @@
-/*--------------------------------------------------------------
+    /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 
@@ -28,8 +28,8 @@ h6 {
 
 
 /*--------------------------------------------------------------
-  # Back to top button
-  --------------------------------------------------------------*/
+# Back to top button
+--------------------------------------------------------------*/
 
 .back-to-top {
     position: fixed;
@@ -63,8 +63,8 @@ h6 {
 
 
 /*--------------------------------------------------------------
-  # Preloader
-  --------------------------------------------------------------*/
+# Preloader
+--------------------------------------------------------------*/
 
 #preloader {
     position: fixed;
@@ -112,8 +112,8 @@ h6 {
 
 
 /*--------------------------------------------------------------
-  # Disable aos animation delay on mobile devices
-  --------------------------------------------------------------*/
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
 
 @media screen and (max-width: 768px) {
     [data-aos-delay] {
@@ -123,8 +123,8 @@ h6 {
 
 
 /*--------------------------------------------------------------
-  # Header
-  --------------------------------------------------------------*/
+# Header
+--------------------------------------------------------------*/
 
 #header {
     background: #fff;
@@ -155,8 +155,8 @@ h6 {
 
 
 /**
-  * Get Startet Button 
-  */
+* Get Startet Button 
+*/
 
 .get-started-btn {
     margin-left: 22px;
@@ -184,13 +184,13 @@ h6 {
 
 
 /*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
+# Navigation Menu
+--------------------------------------------------------------*/
 
 
 /**
-  * Desktop Navigation 
-  */
+* Desktop Navigation 
+*/
 
 .navbar {
     padding: 0;
@@ -303,8 +303,8 @@ h6 {
 
 
 /**
-  * Mobile Navigation 
-  */
+* Mobile Navigation 
+*/
 
 .mobile-nav-toggle {
     color: #37423b;
@@ -414,8 +414,8 @@ h6 {
 
 
 /*--------------------------------------------------------------
-  # Hero Section
-  --------------------------------------------------------------*/
+# Hero Section
+--------------------------------------------------------------*/
 
 #hero {
     width: 100%;
@@ -501,8 +501,8 @@ h6 {
 
 
 /*--------------------------------------------------------------
-  # Sections General
-  --------------------------------------------------------------*/
+# Sections General
+--------------------------------------------------------------*/
 
 section {
     padding: 60px 0;
@@ -574,8 +574,8 @@ section {
 
 
 /*--------------------------------------------------------------
-  # About
-  --------------------------------------------------------------*/
+# About
+--------------------------------------------------------------*/
 
 .about .content h3 {
     font-weight: 600;
@@ -622,8 +622,8 @@ section {
 
 
 /*--------------------------------------------------------------
-  # Counts
-  --------------------------------------------------------------*/
+# Counts
+--------------------------------------------------------------*/
 
 .counts {
     padding: 30px 0;
@@ -647,8 +647,8 @@ section {
 
 
 /*--------------------------------------------------------------
-  # Why Us
-  --------------------------------------------------------------*/
+# Why Us
+--------------------------------------------------------------*/
 
 .why-us .content {
     padding: 30px;
@@ -715,8 +715,8 @@ section {
 
 
 /*--------------------------------------------------------------
-  # Features
-  --------------------------------------------------------------*/
+# Features
+--------------------------------------------------------------*/
 
 .features {
     padding-top: 0px;
@@ -759,8 +759,8 @@ section {
 
 
 /*--------------------------------------------------------------
-  # Courses
-  --------------------------------------------------------------*/
+# Courses
+--------------------------------------------------------------*/
 
 .courses .course-item {
     border-radius: 5px;
@@ -829,8 +829,8 @@ section {
 
 
 /*--------------------------------------------------------------
-  # Trainers
-  --------------------------------------------------------------*/
+# Trainers
+--------------------------------------------------------------*/
 
 .trainers .member {
     text-align: center;
@@ -886,8 +886,8 @@ section {
 
 
 /*--------------------------------------------------------------
-  # Testimonials
-  --------------------------------------------------------------*/
+# Testimonials
+--------------------------------------------------------------*/
 
 .testimonials .testimonial-wrap {
     padding-left: 50px;
@@ -990,8 +990,8 @@ section {
 
 
 /*--------------------------------------------------------------
-  # Cource Details
-  --------------------------------------------------------------*/
+# Cource Details
+--------------------------------------------------------------*/
 
 .course-details h3 {
     font-size: 24px;
@@ -1047,8 +1047,8 @@ section {
 
 
 /*--------------------------------------------------------------
-  # Cource Details Tabs
-  --------------------------------------------------------------*/
+# Cource Details Tabs
+--------------------------------------------------------------*/
 
 .cource-details-tabs {
     overflow: hidden;
@@ -1112,8 +1112,8 @@ section {
 
 
 /*--------------------------------------------------------------
-  # Events
-  --------------------------------------------------------------*/
+# Events
+--------------------------------------------------------------*/
 
 .events .card {
     border: 0;
@@ -1186,8 +1186,8 @@ section {
 
 
 /*--------------------------------------------------------------
-  # Pricing
-  --------------------------------------------------------------*/
+# Pricing
+--------------------------------------------------------------*/
 
 .pricing .box {
     padding: 20px;
@@ -1298,8 +1298,8 @@ section {
 
 
 /*--------------------------------------------------------------
-  # Contact
-  --------------------------------------------------------------*/
+# Contact
+--------------------------------------------------------------*/
 
 .contact {
     padding-top: 5px;
@@ -1351,6 +1351,90 @@ section {
     color: #fff;
 }
 
+.contact .php-email-form {
+    width: 100%;
+    background: #fff;
+}
+
+.contact .php-email-form .form-group {
+    padding-bottom: 8px;
+}
+
+.contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+    margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+    border-color: #5fcf80;
+}
+
+.contact .php-email-form input {
+    height: 44px;
+}
+
+.contact .php-email-form textarea {
+    padding: 10px 12px;
+}
+
+.contact .php-email-form button[type=submit] {
+    background: #5fcf80;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+    background: #3ac162;
+}
+
 @-webkit-keyframes animate-loading {
     0% {
         transform: rotate(0deg);
@@ -1371,8 +1455,8 @@ section {
 
 
 /*--------------------------------------------------------------
-  # Footer
-  --------------------------------------------------------------*/
+# Footer
+--------------------------------------------------------------*/
 
 #footer {
     color: #37423b;
@@ -1433,12 +1517,11 @@ section {
 #footer .footer-top .footer-links ul li {
     padding: 10px 0;
     display: flex;
-    align-items: right;
+    align-items: center;
 }
 
 #footer .footer-top .footer-links ul li:first-child {
     padding-top: 0;
-    align-items: right;
 }
 
 #footer .footer-top .footer-links ul a {
@@ -1451,6 +1534,54 @@ section {
 #footer .footer-top .footer-links ul a:hover {
     text-decoration: none;
     color: #5fcf80;
+}
+
+#footer .footer-newsletter {
+    font-size: 15px;
+}
+
+#footer .footer-newsletter h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444444;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+#footer .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px;
+    text-align: left;
+    border: 1px solid #e0e5e2;
+}
+
+#footer .footer-newsletter form input[type=email] {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type=submit] {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px 2px 20px;
+    background: #5fcf80;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type=submit]:hover {
+    background: #3ac162;
 }
 
 #footer .credits {
@@ -1487,3 +1618,67 @@ section {
     color: #fff;
     text-decoration: none;
 }
+
+#anila {
+    $size: 95vw;
+    $folds: 5;
+    $skew: 15deg;
+    $crunch: 0.6;
+    $duration: 4s;
+    $delay: 1s;
+    $url: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Pittsburgh_Panorama_from_the_Duquesne_Incline.jpg/1280px-Pittsburgh_Panorama_from_the_Duquesne_Incline.jpg);
+    html {
+        background: radial-gradient(at center right, #222, #000);
+    }
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        animation: crunch $duration $delay ease-in-out infinite;
+        @keyframes crunch {
+            50% {
+                transform: scaleX($crunch);
+            }
+        }
+    }
+    .card {
+        display: flex;
+        width: $size;
+        height: 304/1280 * $size;
+    }
+    .fold {
+        flex: 1;
+        background: $url;
+        background-size: cover;
+        @for $i from 1 through $folds {
+            &:nth-child(#{$i}) {
+                background-position: ($i - 1) / ($folds - 1) * 100%;
+            }
+        }
+        &:first-child {
+            border-radius: 2vw 0 0 2vw;
+        }
+        &:last-child {
+            border-radius: 0 2vw 2vw 0;
+        }
+        animation: $duration $delay ease-in-out infinite;
+        &:nth-child(odd) {
+            animation-name: odd-fold;
+            @keyframes odd-fold {
+                50% {
+                    transform: skewY($skew);
+                    filter: brightness(1.25);
+                }
+            }
+        }
+        &:nth-child(even) {
+            animation-name: even-fold;
+            @keyframes even-fold {
+                50% {
+                    transform: skewY(-$skew);
+                    filter: brightness(0.75);
+                }
+            }
+        }
+    }

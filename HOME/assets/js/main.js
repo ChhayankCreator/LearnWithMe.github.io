@@ -5,21 +5,20 @@
 * License: https://bootstrapmade.com/license/
 */
 (function() {
-    "use strict";
-  
-    /**
-     * Easy selector helper function
-     */
-    const select = (el, all = false) => {
-      el = el.trim()
-      if (all) {
-        return [...document.querySelectorAll(el)]
-      } else {
-        return document.querySelector(el)
-      }
+  "use strict";
+
+  /**
+   * Easy selector helper function
+   */
+  const select = (el, all = false) => {
+    el = el.trim()
+    if (all) {
+      return [...document.querySelectorAll(el)]
+    } else {
+      return document.querySelector(el)
     }
-  
-    
+  }
+
   /**
    * Easy event listener function
    */
@@ -35,7 +34,7 @@
   }
 
   /**
-   *  * Easy on scroll event listener 
+   * Easy on scroll event listener 
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -56,10 +55,11 @@
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
-/**
+
+  /**
    * Mobile nav toggle
    */
- on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -74,55 +74,56 @@
       this.nextElementSibling.classList.toggle('dropdown-active')
     }
   }, true)
-    /**
+
+  /**
    * Preloader
    */
-     let preloader = select('#preloader');
-     if (preloader) {
-       window.addEventListener('load', () => {
-         preloader.remove()
-       });
-     }
-   
-     /**
-      * Testimonials slider
-      */
-     new Swiper('.testimonials-slider', {
-       speed: 600,
-       loop: true,
-       autoplay: {
-         delay: 5000,
-         disableOnInteraction: false
-       },
-       slidesPerView: 'auto',
-       pagination: {
-         el: '.swiper-pagination',
-         type: 'bullets',
-         clickable: true
-       },
-       breakpoints: {
-         320: {
-           slidesPerView: 1,
-           spaceBetween: 20
-         },
-   
-         1200: {
-           slidesPerView: 2,
-           spaceBetween: 20
-         }
-       }
-     });
-   
-     /**
-      * Animation on scroll
-      */
-     window.addEventListener('load', () => {
-       AOS.init({
-         duration: 1000,
-         easing: 'ease-in-out',
-         once: true,
-         mirror: false
-       })
-     });
-   
-   })()
+  let preloader = select('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove()
+    });
+  }
+
+  /**
+   * Testimonials slider
+   */
+  new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      }
+    }
+  });
+
+  /**
+   * Animation on scroll
+   */
+  window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    })
+  });
+
+})()
