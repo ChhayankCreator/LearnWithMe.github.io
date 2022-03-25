@@ -1,20 +1,10 @@
-/*!
-  * Bootstrap v5.1.2 (https://getbootstrap.com/)
-  * Copyright 2011-2021 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-  */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory());
 })(this, (function () { 'use strict';
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): util/index.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
+
   const MAX_UID = 1000000;
   const MILLISECONDS_MULTIPLIER = 1000;
   const TRANSITION_END = 'transitionend'; // Shoutout AngusCroll (https://goo.gl/pxwQGp)
@@ -45,11 +35,7 @@
     let selector = element.getAttribute('data-bs-target');
 
     if (!selector || selector === '#') {
-      let hrefAttr = element.getAttribute('href'); // The only valid content that could double as a selector are IDs or classes,
-      // so everything starting with `#` or `.`. If a "real" URL is used as the selector,
-      // `document.querySelector` will rightfully complain it is invalid.
-      // See https://github.com/twbs/bootstrap/issues/32273
-
+      let hrefAttr = element.getAttribute('href'); 
       if (!hrefAttr || !hrefAttr.includes('#') && !hrefAttr.startsWith('.')) {
         return null;
       } // Just in case some CMS puts out a full URL with the anchor appended
@@ -320,17 +306,7 @@
     return list[Math.max(0, Math.min(index, listLength - 1))];
   };
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): dom/event-handler.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+
 
   const namespaceRegex = /[^.]*(?=\..*)\.|.*/;
   const stripNameRegex = /\..*/;
@@ -608,18 +584,6 @@
 
   };
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): dom/data.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
   const elementMap = new Map();
   const Data = {
     set(element, key, instance) {
@@ -662,17 +626,7 @@
 
   };
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): base-component.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+  
 
   const VERSION = '5.1.2';
 
@@ -728,12 +682,7 @@
 
   }
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): util/component-functions.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
+
 
   const enableDismissTrigger = (component, method = 'hide') => {
     const clickEvent = `click.dismiss${component.EVENT_KEY}`;
@@ -754,17 +703,6 @@
     });
   };
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): alert.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
 
   const NAME$d = 'alert';
   const DATA_KEY$c = 'bs.alert';
@@ -843,17 +781,7 @@
 
   defineJQueryPlugin(Alert);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): button.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+
 
   const NAME$c = 'button';
   const DATA_KEY$b = 'bs.button';
@@ -914,12 +842,7 @@
 
   defineJQueryPlugin(Button);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): dom/manipulator.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
+  
   function normalizeData(val) {
     if (val === 'true') {
       return true;
@@ -988,12 +911,7 @@
 
   };
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): dom/selector-engine.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
+  
   const NODE_TEXT = 3;
   const SelectorEngine = {
     find(selector, element = document.documentElement) {
@@ -1058,17 +976,6 @@
 
   };
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): carousel.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
 
   const NAME$b = 'carousel';
   const DATA_KEY$a = 'bs.carousel';
@@ -1607,17 +1514,6 @@
 
   defineJQueryPlugin(Carousel);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): collapse.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
 
   const NAME$a = 'collapse';
   const DATA_KEY$9 = 'bs.collapse';
@@ -2121,8 +2017,7 @@
   // means it doesn't take into account transforms.
 
   function getLayoutRect(element) {
-    var clientRect = getBoundingClientRect(element); // Use the clientRect sizes if it's not been transformed.
-    // Fixes https://github.com/popperjs/popper-core/issues/1223
+    var clientRect = getBoundingClientRect(element); 
 
     var width = element.offsetWidth;
     var height = element.offsetHeight;
@@ -2198,7 +2093,7 @@
   }
 
   function getTrueOffsetParent(element) {
-    if (!isHTMLElement(element) || // https://github.com/popperjs/popper-core/issues/837
+    if (!isHTMLElement(element) ||
     getComputedStyle$1(element).position === 'fixed') {
       return null;
     }
@@ -2224,9 +2119,7 @@
     var currentNode = getParentNode(element);
 
     while (isHTMLElement(currentNode) && ['html', 'body'].indexOf(getNodeName(currentNode)) < 0) {
-      var css = getComputedStyle$1(currentNode); // This is non-exhaustive but covers the most common CSS properties that
-      // create a containing block.
-      // https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#identifying_the_containing_block
+      var css = getComputedStyle$1(currentNode); 
 
       if (css.transform !== 'none' || css.perspective !== 'none' || css.contain === 'paint' || ['transform', 'perspective'].indexOf(css.willChange) !== -1 || isFirefox && css.willChange === 'filter' || isFirefox && css.filter && css.filter !== 'none') {
         return currentNode;
@@ -2690,12 +2583,6 @@
     return getScrollParent(getParentNode(node));
   }
 
-  /*
-  given a DOM element, return the list of all scroll parents, up the list of ancesors
-  until we get to the top window object. This list is what we attach scroll listeners
-  to, because if any of these parent elements scroll, we'll need to re-calculate the
-  reference element's position.
-  */
 
   function listScrollParents(element, list) {
     var _element$ownerDocumen;
@@ -6785,12 +6672,7 @@
 
   defineJQueryPlugin(Toast);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): index.umd.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
+ 
   const index_umd = {
     Alert,
     Button,

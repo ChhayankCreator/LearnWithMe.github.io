@@ -1,8 +1,3 @@
-/*!
-  * Bootstrap v5.1.2 (https://getbootstrap.com/)
-  * Copyright 2011-2021 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-  */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core')) :
   typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
@@ -29,12 +24,7 @@
 
   const Popper__namespace = /*#__PURE__*/_interopNamespace(Popper);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): util/index.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
+  
   const MAX_UID = 1000000;
   const MILLISECONDS_MULTIPLIER = 1000;
   const TRANSITION_END = 'transitionend'; // Shoutout AngusCroll (https://goo.gl/pxwQGp)
@@ -340,17 +330,7 @@
     return list[Math.max(0, Math.min(index, listLength - 1))];
   };
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): dom/event-handler.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+ 
 
   const namespaceRegex = /[^.]*(?=\..*)\.|.*/;
   const stripNameRegex = /\..*/;
@@ -682,17 +662,6 @@
 
   };
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): base-component.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
 
   const VERSION = '5.1.2';
 
@@ -774,18 +743,7 @@
     });
   };
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): alert.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
-
+ 
   const NAME$d = 'alert';
   const DATA_KEY$c = 'bs.alert';
   const EVENT_KEY$c = `.${DATA_KEY$c}`;
@@ -863,17 +821,7 @@
 
   defineJQueryPlugin(Alert);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): button.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+  
 
   const NAME$c = 'button';
   const DATA_KEY$b = 'bs.button';
@@ -934,12 +882,6 @@
 
   defineJQueryPlugin(Button);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): dom/manipulator.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
   function normalizeData(val) {
     if (val === 'true') {
       return true;
@@ -1078,18 +1020,7 @@
 
   };
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): carousel.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
-
+  
   const NAME$b = 'carousel';
   const DATA_KEY$a = 'bs.carousel';
   const EVENT_KEY$a = `.${DATA_KEY$a}`;
@@ -1627,17 +1558,7 @@
 
   defineJQueryPlugin(Carousel);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): collapse.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+  
 
   const NAME$a = 'collapse';
   const DATA_KEY$9 = 'bs.collapse';
@@ -1946,17 +1867,6 @@
 
   defineJQueryPlugin(Collapse);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): dropdown.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
 
   const NAME$9 = 'dropdown';
   const DATA_KEY$8 = 'bs.dropdown';
@@ -2512,12 +2422,7 @@
 
   }
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): util/backdrop.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
+  
   const Default$7 = {
     className: 'modal-backdrop',
     isVisible: true,
@@ -2636,12 +2541,7 @@
 
   }
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): util/focustrap.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
+  
   const Default$6 = {
     trapElement: null,
     // The element to trap focus inside of
@@ -2739,17 +2639,7 @@
 
   }
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): modal.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+  
 
   const NAME$6 = 'modal';
   const DATA_KEY$6 = 'bs.modal';
@@ -3168,17 +3058,7 @@
 
   defineJQueryPlugin(Modal);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): offcanvas.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+  
 
   const NAME$5 = 'offcanvas';
   const DATA_KEY$5 = 'bs.offcanvas';
@@ -3424,12 +3304,7 @@
 
   defineJQueryPlugin(Offcanvas);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): util/sanitizer.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
+ 
   const uriAttributes = new Set(['background', 'cite', 'href', 'itemtype', 'longdesc', 'poster', 'src', 'xlink:href']);
   const ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i;
   /**
@@ -3536,17 +3411,7 @@
     return createdDocument.body.innerHTML;
   }
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): tooltip.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+  
 
   const NAME$4 = 'tooltip';
   const DATA_KEY$4 = 'bs.tooltip';
@@ -4246,17 +4111,7 @@
 
   defineJQueryPlugin(Tooltip);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): popover.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+  
 
   const NAME$3 = 'popover';
   const DATA_KEY$3 = 'bs.popover';
@@ -4356,17 +4211,7 @@
 
   defineJQueryPlugin(Popover);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): scrollspy.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+  
 
   const NAME$2 = 'scrollspy';
   const DATA_KEY$2 = 'bs.scrollspy';
@@ -4591,18 +4436,7 @@
 
   defineJQueryPlugin(ScrollSpy);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): tab.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
-
+  
   const NAME$1 = 'tab';
   const DATA_KEY$1 = 'bs.tab';
   const EVENT_KEY$1 = `.${DATA_KEY$1}`;
@@ -4789,17 +4623,7 @@
 
   defineJQueryPlugin(Tab);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): toast.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+  
 
   const NAME = 'toast';
   const DATA_KEY = 'bs.toast';
@@ -5019,12 +4843,8 @@
 
   defineJQueryPlugin(Toast);
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.2): index.umd.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
+  
+  
   const index_umd = {
     Alert,
     Button,
